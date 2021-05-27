@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+
+::selection {
+  background-color: yellow;
+  color: black;
+}
+
+html {
+  background: rgb(70, 70, 70);
+  color: rgb(233, 233, 233);
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  padding: 1.5rem 2rem;
+  color: rgb(176, 186, 255);
+  background: rgb(60, 60, 60);
+  text-align: center;
+}
+
+header > h3 {
+  font-size: 40px;
+}
+
+footer {
+  padding: 1.5rem 2rem;
+  background: rgb(60, 60, 60);
+  text-align: center;
+}
+
+footer > button {
+  padding: 11px 20px;
+  font-size: 25px;
+  font-family: Verdana, sans-serif;
+  background: rgb(1,0,25);
+  color: white;
+  font-weight: bolder;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(90deg, rgba(1,0,25,1) 0%, rgba(8,8,147,1) 50%, rgba(1,0,25,1) 100%);
+}
+
+footer > button:focus {
+  outline: none;
+}
+
+#board {
+  width: 400px;
+  height: 400px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  height: calc(100% - 196px);
+}
+
+#name,
+#moves {
+  margin: 2.5rem;
+}
+
+#name {
+  font-size: 54px;
+}
+
+#moves {
+  font-size: 35px;
+}
